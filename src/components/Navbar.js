@@ -1,6 +1,5 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import allCountries from '../countries.json';
 import CountriesList from './CountriesList';
 import { Row, Col } from 'antd';
 function Navbar() {
@@ -13,7 +12,7 @@ function Navbar() {
       </Row>
       <Row>
         <Col span={12}>
-          <CountriesList allCountries={allCountries} />
+          <CountriesList />
         </Col>
         <Col span={12}>
           <Outlet />
